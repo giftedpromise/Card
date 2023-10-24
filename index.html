@@ -3,7 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Card</title>
   </head>
-  <body></body>
+  <body>
+    <nav id="desktop-nav">
+      <div class="snap-heading">snap</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#company">Company</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div class="login-register-container">
+        <button class="login-btn">Login</button>
+        <button class="register-btn">Register</button>
+      </div>
+    </nav>
+    <nav class="hamburger-nav">
+      <div class="logo">snap</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li onclick="toggleMenu()"><a href="#feature">Features</a></li>
+          <li onclick="toggleMenu()"><a href="#company">Company</a></li>
+          <li onclick="toggleMenu()"><a href="#careers">Careers</a></li>
+          <li onclick="toggleMenu()"><a href="#about">About</a></li>
+        </div>
+        <div class="menu-links-a">
+          <button class="login-btn" onclick="toggleMenu()">Login</button>
+          <button class="register-btn" onclick="toggleMenu()">Register</button>
+        </div>
+      </div>
+    </nav>
+    <script src="file.js"></script>
+  </body>
 </html>
