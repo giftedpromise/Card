@@ -8,6 +8,8 @@
 
 body {
   font-family: "Epilogue", sans-serif;
+  min-height: 100vh;
+  max-width: 100vw;
 }
 
 :root {
@@ -18,6 +20,47 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+.login-register-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  margin-top: -2px;
+}
+
+.login-register-container button {
+  padding: 10px;
+}
+
+.login-btn,
+.register-btn,
+.login-btna,
+.register-btna {
+  font-family: "Epilogue", sans-serif;
+  background-color: transparent;
+  color: var(--medium-gray);
+  padding: 10px;
+}
+
+.login-btn:hover,
+.register-btn:hover,
+.register-btna:hover,
+.login-btna:hover {
+  cursor: pointer;
+}
+
+.login-btn,
+.login-btna {
+  border: none;
+}
+
+.register-btn,
+.register-btna {
+  border-radius: 1rem;
+  border: 1.5px solid var(--medium-gray);
+  padding: 10px;
+  width: 80%;
 }
 
 body .overlay {
@@ -31,42 +74,14 @@ body .overlay {
   background-color: hsla(0, 0%, 8%, 0.5);
   transition: all 0.3s linear;
 }
-body.nav-open .overlay {
+body.open .overlay {
   display: initial;
   opacity: 1;
 }
 
-.login-register-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.login-register-container button {
-  padding: 10px;
-}
-
-.login-btn,
-.register-btn {
-  font-family: "Epilogue", sans-serif;
-  background-color: transparent;
-  color: var(--medium-gray);
-  padding: 10px;
-}
-
-.login-btn:hover,
-.register-btn:hover {
-  cursor: pointer;
-}
-
-.login-btn {
-  border: none;
-}
-
-.register-btn {
-  border-radius: 1rem;
-  border: 1.5px solid var(--medium-gray);
-  padding: 10px;
-  width: 80%;
+#desktop-nav {
+  align-items: center;
+  padding: 13px 33px;
 }
 
 nav,
@@ -82,14 +97,18 @@ nav {
 
 .nav-links {
   list-style: none;
-  gap: 2rem;
-  font-size: 1.5rem;
+  font-size: 15px;
+
+  justify-content: space-evenly;
+  margin-top: 12px;
+  margin-left: -10px;
+  width: 435px;
 }
 
 a {
   color: var(--medium-gray);
   text-decoration: none;
-  text-decoration-color: white;
+  text-decoration-color: var(--almost-White);
 
   font-family: "Epilogue", sans-serif;
 }
@@ -99,10 +118,6 @@ a:hover {
   text-decoration: underline;
   text-underline-offset: 0.5rem;
   text-decoration-color: var(--medium-gray);
-}
-
-.snap-heading {
-  color: var(--almost-black);
 }
 
 #hamburger-nav {
@@ -142,14 +157,19 @@ a:hover {
   transition: all 0.3 ease-in-out;
 }
 
+.menu-links button {
+  margin-top: 20px;
+}
+
 .menu-links a {
-  display: block;
+  display: flex;
   padding: 10px;
   text-align: center;
   font-size: 13px;
   color: var(--medium-gray);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
+  align-self: start;
 }
 
 .menu-links li {
