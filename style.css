@@ -105,7 +105,7 @@ nav {
   flex-direction: row;
   align-items: center;
   width: 435px;
-  margin-right: 50em;
+  margin-right: 10em;
 }
 
 a {
@@ -218,6 +218,7 @@ main {
 .desktop-image {
   display: block;
   width: 480px;
+  height: 90%;
 }
 
 .desktop-image img {
@@ -233,6 +234,57 @@ main {
 .content {
   padding-right: 100px;
   padding-left: 19px;
+}
+
+.sub-content {
+  padding: 1rem;
+}
+
+.sub-content h1 {
+  font-size: 35px;
+  font-weight: 900;
+  color: var(--almost-black);
+  font-family: "Epilogue", sans-serif;
+  margin: -4rem 0 1.5rem 0;
+}
+
+.sub-content p {
+  color: var(--medium-gray);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  font-size: 12px;
+}
+
+.sub-content .learn-more {
+  color: var(--almost-White);
+  background: var(--almost-black);
+  font-family: "Epilogue", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid var(--almost-black);
+  padding: 15px 24px;
+  border-radius: 14px;
+
+  margin-bottom: 2rem;
+}
+
+.sub-content .learn-more:hover {
+  cursor: pointer;
+  background-color: var(--almost-white);
+  color: var(--almost-black);
+  border: 1px solid var(--almost-black);
+  -webkit-transition: all 0.3ms ease-out;
+  transition: all 0.3ms ease-out;
+}
+
+.content-icon {
+  display: flex;
+  margin: 48px 0 0 0;
+  gap: 2rem;
+}
+
+.content-icon img {
+  width: 10%;
 }
 
 @media screen and (max-width: 1200px) {
