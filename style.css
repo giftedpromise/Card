@@ -207,49 +207,49 @@ a:hover {
   transform: none;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-height: 100vh;
+}
+
 main {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 138px;
-}
-
-.desktop-image {
-  display: block;
-  width: 480px;
-  height: 90%;
-}
-
-.desktop-image img {
-  margin-top: 20px;
-  margin-left: -40px;
-  width: 100%;
+  margin-bottom: 4rem;
 }
 
 .mobile-image {
   display: none;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.desktop-image {
+  margin-left: 8rem;
+  width: 100%;
+}
+
+.content {
+  margin-top: 10rem;
 }
 
 .sub-content h1 {
-  font-size: 45px;
+  font-size: 70px;
   font-weight: 900;
   color: var(--almost-black);
   font-family: "Epilogue", sans-serif;
-  margin: 2rem 0 1.5rem 0;
+  margin: -4rem 0 1.5rem 0;
 }
 
 .sub-content p {
   color: var(--medium-gray);
   line-height: 1.5;
   margin-bottom: 1.5rem;
-  font-size: 16px;
+  font-size: 14px;
+  font-family: "Epilogue", sans-serif;
 }
 
 .sub-content .learn-more {
@@ -276,83 +276,11 @@ main {
 
 .content-icon {
   display: flex;
-  margin: 48px 0 0 0;
+  margin: 2rem 0 0 0;
   gap: 2rem;
 }
 
 .content-icon img {
-  width: 10%;
-}
-
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  body {
-    min-height: 100vh;
-  }
-
-  .container {
-    flex-direction: column-reverse;
-    width: 100%;
-  }
-
-  .content {
-    gap: 2rem;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
-
-  main {
-    padding: 20px;
-    margin-top: -5px;
-  }
-
-  .sub-content h1 {
-    font-size: 1.5rem;
-    padding: 30x;
-    display: flex;
-    justify-content: center;
-  }
-
-  .sub-content h1 br {
-    display: none;
-  }
-
-  .sub-content p {
-    display: flex;
-    justify-content: center;
-    padding: 30x;
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .sub-content p br {
-    display: none;
-  }
-
-  .desktop-image {
-    display: none;
-  }
-
-  .mobile-image {
-    display: block;
-    width: 100%;
-  }
-
-  .mobile-image img {
-    width: 375px;
-
-    margin-top: -10px;
-  }
+  width: 64px;
+  height: 12px;
 }
