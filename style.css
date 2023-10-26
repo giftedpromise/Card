@@ -284,3 +284,75 @@ main {
   width: 64px;
   height: 12px;
 }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    width: 100%;
+
+    padding: 0;
+  }
+
+  main {
+    align-items: flex-start;
+  }
+  .hamburger-icon {
+    margin-left: -2px;
+    padding-right: 5px;
+  }
+
+  .content {
+    padding: 0 10rem;
+  }
+
+  .sub-content h1 {
+    font-size: 2rem;
+    padding: 30x;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sub-content h1 br {
+    display: none;
+  }
+
+  .sub-content p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  .sub-content p br {
+    display: none;
+  }
+
+  .sub-content .learn-more {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: -2rem;
+  }
+
+  main {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+}
