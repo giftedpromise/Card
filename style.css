@@ -285,7 +285,7 @@ main {
   height: 12px;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 600px) {
   .container {
     flex-direction: column-reverse;
     width: 100%;
@@ -325,11 +325,6 @@ main {
 
   .sub-content p br {
     display: none;
-  }
-
-  .sub-content .learn-more {
-    margin: 0 auto;
-    margin-bottom: 2rem;
   }
 
   .desktop-image {
