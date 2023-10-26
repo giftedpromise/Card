@@ -333,6 +333,11 @@ main {
     display: flex;
     justify-content: center;
     padding: 30x;
+    font-size: 14px;
+  }
+
+  .sub-content p br {
+    display: none;
   }
 
   .desktop-image {
