@@ -275,7 +275,6 @@ main {
 @media screen and (max-width: 1400px) {
   main {
     height: 100vh;
-    margin-bottom: 6rem;
   }
 }
 
@@ -297,12 +296,8 @@ main {
 
   body {
     overflow-x: hidden;
-
     width: auto;
-  }
-
-  main {
-    margin-bottom: 0;
+    height: fit-content;
   }
 
   .container {
