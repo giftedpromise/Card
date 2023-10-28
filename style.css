@@ -348,4 +348,8 @@ main {
     margin-left: 0;
     margin-bottom: -2rem;
   }
+
+  .content-icon {
+    margin-bottom: 1rem;
+  }
 }
