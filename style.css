@@ -351,5 +351,6 @@ main {
 
   .content-icon {
     margin-bottom: -2rem;
+    margin-left: auto;
   }
 }
