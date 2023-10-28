@@ -353,4 +353,8 @@ main {
     margin-top: 0.6rem;
     gap: 2rem;
   }
+
+  .learn-button {
+    text-align: center;
+  }
 }
