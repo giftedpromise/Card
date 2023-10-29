@@ -334,6 +334,10 @@ main {
     font-size: 16px;
   }
 
+  .menu-register {
+    text-align: center;
+  }
+
   .sub-content p br {
     display: none;
   }
