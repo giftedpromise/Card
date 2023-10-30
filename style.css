@@ -302,8 +302,6 @@ main {
   .container {
     flex-direction: column-reverse;
     display: flex;
-
-    width: 90vw;
   }
 
   .hamburger-icon {
